@@ -1,34 +1,5 @@
 <!doctype html>
 <html lang="en">
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact">
-  <h2>Connect With Me</h2>
-  <p>Let’s build something amazing together 🚀</p>
-
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/shihab-shahriar-kabir/" target="_blank" class="linkedin">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://www.facebook.com/shihab.shahriar.73" target="_blank" class="facebook">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://x.com/kabir1922" target="_blank" class="twitter">
-      <i class="fa-brands fa-x-twitter"></i>
-    </a>
-    <a href="https://www.instagram.com/shihab_shahriar_kabir/" target="_blank" class="instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://wa.me/8801780749778" target="_blank" class="whatsapp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
-</section>
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,22 +13,20 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  
+
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
-<body>
-  <!-- Navigation + Hero -->
+
+<body id="home">
+  <!-- ===================== NAVIGATION + HERO ===================== -->
   <header class="hero">
-    
-      <!-- Navigation Bar -->
     <nav class="navbar">
       <div class="nav-container">
         <div class="logo">
           <img src="logo.png" alt="Kabir Tech Lab Logo" class="logo-img">
           <span class="logo-text">Kabir Tech Lab</span>
         </div>
-    
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -80,32 +49,38 @@
       </div>
     </div>
   </header>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="contact" class="contact">
+    <h2>Connect With Me</h2>
+    <p>Let’s build something amazing together 🚀</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/shihab-shahriar-kabir/" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.facebook.com/shihab.shahriar.73" target="_blank" class="facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://x.com/kabir1922" target="_blank" class="x">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/shihab_shahriar_kabir/" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/8801780749778" target="_blank" class="whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <p class="footer-credit">
+      © <span id="year"></span> Kabir Tech Lab — built by Shihab Shahriar Kabir
+    </p>
+  </footer>
+
+  <!-- Update the year automatically -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-<!-- FOOTER -->
-<footer id="contact">
-  <h2>Connect With Me</h2>
-  <p>Let’s build something amazing together 🚀</p>
-
-  <div class="social-links">
-    <a href="https://www.linkedin.com/" target="_blank" class="linkedin">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://www.facebook.com/" target="_blank" class="facebook">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://x.com/" target="_blank" class="x">
-      <i class="fa-brands fa-x-twitter"></i>
-    </a>
-    <a href="https://www.instagram.com/" target="_blank" class="instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://wa.me/yourwhatsappphonenumber" target="_blank" class="whatsapp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
-
-  <p class="footer-credit">
-    © <span id="year"></span> Kabir Tech Lab — built by Shihab Shahriar Kabir
-  </p>
-</footer>
 </html>
