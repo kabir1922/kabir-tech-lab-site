@@ -15,3 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   type();
 });
+
+
+// Navbar active‑link highlight (add this part)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links a.active')?.classList.remove('active');
+    link.classList.add('active');
+  });
+});
