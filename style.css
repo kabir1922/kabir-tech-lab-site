@@ -184,3 +184,59 @@ body {
 }
 .instagram:hover { color: #e4405f; }
 .whatsapp:hover { color: #25d366; }
+
+/* FOOTER */
+footer {
+  background-color: #0f172a;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  color: #e2e8f0;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(34, 211, 238, 0.2);
+}
+
+footer h2 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: .5rem;
+}
+
+footer p {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: #e2e8f0;
+  font-size: 1.6rem;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.social-links a:hover {
+  transform: translateY(-4px);
+}
+
+/* Brand colors */
+.linkedin:hover  { color: #0077b5; }
+.facebook:hover  { color: #1877f2; }
+.x:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 6px;
+  padding: 4px;
+}
+.instagram:hover { color: #e4405f; }
+.whatsapp:hover  { color: #25d366; }
+
+.footer-credit {
+  font-size: 0.9rem;
+  color: #64748b;
+}
