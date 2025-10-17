@@ -24,3 +24,4 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.classList.add('active');
   });
 });
+document.getElementById("year").textContent = new Date().getFullYear();
