@@ -4,10 +4,103 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kabir Tech Lab — Shihab Shahriar Kabir</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --fg: #e2e8f0;
+      --accent: #22d3ee;
+      --muted: #94a3b8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      text-align: center;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+      background: linear-gradient(90deg, var(--accent), #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    header p {
+      color: var(--muted);
+      font-weight: 300;
+      margin-top: 0;
+    }
+    .skills {
+      margin: 2rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      max-width: 700px;
+    }
+    .badge {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      transition: 0.3s ease;
+    }
+    .badge:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
+    footer {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Kabir Tech Lab</h1>
-  <p>Information & Communications Engineer — IT Executive @ Gaco Pharmaceuticals</p>
-  <p>Skills: Python (Selenium), C/C++, JavaScript, HTML/CSS/PHP, Java, Office, Adobe, Blender</p>
+  <header>
+    <h1>Kabir Tech Lab</h1>
+    <p>Information & Communications Engineer | IT Executive @ Gaco Pharmaceuticals</p>
+  </header>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="badge">Python (Selenium)</span>
+      <span class="badge">C / C++</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">HTML / CSS / PHP</span>
+      <span class="badge">Java</span>
+      <span class="badge">MS Office</span>
+      <span class="badge">Photoshop</span>
+      <span class="badge">Premiere Pro</span>
+      <span class="badge">Blender</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Connect</h2>
+    <p>
+      <a href="https://github.com/kabir1922" target="_blank">GitHub</a> •
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a> •
+      <a href="mailto:youremail@example.com">Email Me</a>
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Kabir Tech Lab — built by Shihab Shahriar Kabir
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
