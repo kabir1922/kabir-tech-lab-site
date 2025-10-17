@@ -139,3 +139,43 @@ body {
   background: #22d3ee;
   color: #0f172a;
 }
+
+.contact {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, rgba(34,211,238,0.05), rgba(96,165,250,0.05));
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact p {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #e2e8f0;
+  font-size: 1.8rem;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.social-links a:hover {
+  transform: translateY(-4px);
+}
+
+/* individual brand accent colors */
+.linkedin:hover { color: #0077b5; }
+.facebook:hover { color: #1877f2; }
+.twitter:hover { color: #1da1f2; }
+.instagram:hover { color: #e4405f; }
+.whatsapp:hover { color: #25d366; }
