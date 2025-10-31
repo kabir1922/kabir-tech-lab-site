@@ -199,6 +199,12 @@ body {
   color: #0f172a;
 }
 
+.resume-btn i {
+  margin-right: 6px;   /* space between icon and text */
+  font-size: 0.9em;    /* slightly smaller than text */
+  vertical-align: middle;
+}
+
 /* FOOTER */
 footer {
   background-color: #0f172a;
