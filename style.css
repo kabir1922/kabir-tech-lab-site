@@ -10,7 +10,11 @@ body{font-family:'Poppins',sans-serif;background:#000;color:#e5e5e5;scroll-behav
 .nav-links a{color:#e5e5e5;text-decoration:none;transition:.3s;}
 .nav-links a:hover,.nav-links .active{color:#facc15;}
 .resume-btn{border:2px solid #facc15;padding:6px 12px;border-radius:6px;color:#facc15;}
-.resume-btn:hover{background:#facc15;color:#000;}
+.resume-btn:hover,
+.resume-btn:hover i {
+  color:#000;                 /* turns icon and text black */
+  background-color:#facc15;   /* keeps yellow background */
+}
 .brand{display:flex;align-items:center;gap:.6rem;color:#facc15;font-weight:700;}
 .brand img{height:80px;width:auto;}
 
