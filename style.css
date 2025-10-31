@@ -185,6 +185,20 @@ body {
 .instagram:hover { color: #e4405f; }
 .whatsapp:hover { color: #25d366; }
 
+/* Resume button in navbar */
+.nav-links a.resume-btn {
+  border: 2px solid #22d3ee;
+  color: #22d3ee;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a.resume-btn:hover {
+  background-color: #22d3ee;
+  color: #0f172a;
+}
+
 /* FOOTER */
 footer {
   background-color: #0f172a;
