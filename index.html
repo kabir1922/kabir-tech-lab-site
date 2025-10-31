@@ -1,82 +1,83 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kabir Tech Lab — Shihab Shahriar Kabir</title>
 
-  <!-- Guaranteed-working Font Awesome link -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+  <!-- Font & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 
-<body id="home">
-  <!-- ===================== NAVIGATION + HERO ===================== -->
-  <header class="hero">
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <img src="logo.png" alt="Kabir Tech Lab Logo" class="logo-img">
-          <span class="logo-text">Kabir Tech Lab</span>
-        </div>
-        <ul class="nav-links">
-          <!-- <li><a href="#home" class="active">Home</a></li> -->
-          <li><a href="#about" class="active">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a href="Shihab%20Shahriar%20Kabir.pdf" target="_blank" class="resume-btn">
-              <i class="fa-solid fa-download"></i>
-              Resume
-            </a>
-          </li>
-        </ul>
+<body>
+  <!-- ========= NAVBAR ========= -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Kabir Tech Lab logo">
+        <span>Kabir Tech Lab</span>
       </div>
-    </nav>
-
-<!-- ========================================== ABOUT SECTION Starts ========================================== -->
-
-<!-- ========================================== ABOUT SECTION Ends ========================================== -->
-
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer id="contact" class="contact">
-    <h2>Connect With Me</h2>
-    <p>Let’s build something amazing together 🚀</p>
-
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/shihab-shahriar-kabir/" target="_blank" class="linkedin">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.facebook.com/shihab.shahriar.73" target="_blank" class="facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://x.com/kabir1922" target="_blank" class="x">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://www.instagram.com/shihab_shahriar_kabir/" target="_blank" class="instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://wa.me/8801780749778" target="_blank" class="whatsapp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank" class="resume-btn"><i class="fa-solid fa-download"></i> Resume</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <p class="footer-credit">
-      © <span id="year"></span> Kabir Tech Lab — built by Shihab Shahriar Kabir
+  <!-- ========= HERO SECTION ========= -->
+  <header id="home" class="hero">
+    <div class="hero-text">
+      <p class="hello">Hello!</p>
+      <h1>I'm <span>Shihab Shahriar Kabir</span></h1>
+      <h2>Information & Communications Engineer</h2>
+      <p class="desc">IT Executive @ Gaco Pharmaceuticals, specializing in automation and web development.</p>
+      <div class="buttons">
+        <a href="#contact" class="btn primary">Hire Me</a>
+        <a href="#projects" class="btn secondary">My Works</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/profile.png" alt="Profile photo">
+    </div>
+  </header>
+
+  <!-- ========= ABOUT ========= -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m an engineer who bridges technology and creativity. My passion lies in building automation tools, modern web apps, and creating visual stories through design and 3D media.
     </p>
-  </footer>
+  </section>
 
-  <!-- Update the year automatically -->
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- ========= SKILLS ========= -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="bars">
+      <div class="bar"><span>Python (Selenium)</span><div class="line" style="--width:90%"></div></div>
+      <div class="bar"><span>HTML / CSS / JS</span><div class="line" style="--width:85%"></div></div>
+      <div class="bar"><span>PHP / MySQL</span><div class="line" style="--width:75%"></div></div>
+      <div class="bar"><span>Blender / Photoshop</span><div class="line" style="--width:60%"></div></div>
+    </div>
+  </section>
+
+  <!-- ========= FOOTER ========= -->
+  <footer id="contact">
+    <h2>Connect With Me</h2>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/shihab-shahriar-kabir/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://x.com/kabir1922" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/shihab.shahriar.73" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/shihab_shahriar_kabir/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p>© <span id="year"></span> Kabir Tech Lab — built by Shihab Shahriar Kabir</p>
+  </footer>
 </body>
 </html>
