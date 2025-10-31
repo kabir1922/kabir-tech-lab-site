@@ -26,8 +26,4 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 });
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const aboutSection = document.querySelector('.about');
-window.addEventListener('scroll', () => {
-  const appear = aboutSection.getBoundingClientRect().top < window.innerHeight - 150;
-  if (appear) aboutSection.classList.add('visible');
-});
+
