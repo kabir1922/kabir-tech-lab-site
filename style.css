@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+
+
 /* ========== GLOBAL RESET & BODY ========== */
 * {
   box-sizing: border-box;
@@ -13,7 +15,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #000;
+  background: linear-gradient(120deg, #0ea5e9 0%, #6366f1 70%);
   color: #e5e5e5;
   line-height: 1.6;
 }
